@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOLA Bombshells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <a href="#"><img src="NOLA-Bombshells-LOGO.png" /></a>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">Bombshell Brew</a>
+        <a href="#">Become a Bombshell</a>
+        <a href="#">Community</a>
+        <a href="#" class="nav-cta">Book Us</a>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleDrawer()"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div id="drawerOverlay" onclick="closeDrawer()"></div>
+
+    <div id="drawer">
+      <div class="drawer-header">
+        <div class="drawer-logo"><img src="NOLA-Bombshells-LOGO.png" /></div>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="#" onclick="closeDrawer()">Home</a>
+        <a href="#" onclick="closeDrawer()">Meet the Team</a>
+        <a href="#" onclick="closeDrawer()">Bombshell Brew</a>
+        <a href="#" onclick="closeDrawer()">Become a Bombshell</a>
+        <a href="#" onclick="closeDrawer()">Community</a>
+      </nav>
+      <div class="drawer-footer">
+        <a href="#" class="drawer-cta" onclick="closeDrawer()">Book Us</a>
+        <div class="drawer-social">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-accent"></div>
+      <div class="hero-overlay"></div>
+      <video autoplay muted loop poster="https://static.wixstatic.com/media/32b6f9_58b4659b4d2a4eb5a291ccacbd03026e~mv2.jpg/v1/fill/w_960,h_722,fp_0.51_0.36,q_90,enc_avif,quality_auto/32b6f9_58b4659b4d2a4eb5a291ccacbd03026e~mv2.jpg">
+        <source src="Website-HERO.mp4" type="video/mp4" />
+        <source src="Website-HERO.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <h1 class="hero-title">We are the<br /><em class="font-red">Bombshells.</em></h1>
+        <p class="hero-subtitle">Performance · Community · Empowerment</p>
+        <p class="hero-mission">
+          Bold performers. Community champions. The NOLA Bombshells bring energy, artistry, and heart to every stage —
+          from parade routes to philanthropy. We are New Orleans' premier performance team.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary">Become a Bombshell</a>
+          <a href="#" class="btn-outline">See Us Perform</a>
+          <a href="#" class="btn-outline">Support Our Mission</a>
+        </div>
+      </div>
+      <noscript>
+            <img src="https://static.wixstatic.com/media/32b6f9_58b4659b4d2a4eb5a291ccacbd03026e~mv2.jpg/v1/fill/w_960,h_722,fp_0.51_0.36,q_90,enc_avif,quality_auto/32b6f9_58b4659b4d2a4eb5a291ccacbd03026e~mv2.jpg" alt="Static Fallback Image" style="width: 100%; height: 100%; object-fit: cover;">
+        </noscript>
+    </section>
+
+    <section class="video-section">
+      <div class="inner">
+        <span class="section-tag">On Stage &amp; In the Streets</span>
+        <h2 class="section-title">See Us <em>Perform</em></h2>
+        <div class="divider"></div>
+        <div class="video-grid">
+          <div class="video-card">
+            <img
+              src="https://static.wixstatic.com/media/32b6f9_58b4659b4d2a4eb5a291ccacbd03026e~mv2.jpg/v1/fill/w_960,h_722,fp_0.51_0.36,q_90,enc_avif,quality_auto/32b6f9_58b4659b4d2a4eb5a291ccacbd03026e~mv2.jpg"
+              alt="NOLA Bombshells performance" />
+            <div class="video-overlay">
+              <button class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
+              </button>
+              <span class="video-card-label">Featured Performance</span>
+              <div class="video-card-title">Mardi Gras 2024 Parade Showcase</div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img
+              src="https://static.wixstatic.com/media/32b6f9_ea7fde4cbc0d4ef4a59f6705f91fcf56~mv2.jpg/v1/fit/w_927,h_697,q_90,enc_avif,quality_auto/32b6f9_ea7fde4cbc0d4ef4a59f6705f91fcf56~mv2.jpg"
+              alt="Stage performance" />
+            <div class="video-overlay">
+              <button class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
+              </button>
+              <span class="video-card-label">Stage Show</span>
+              <div class="video-card-title">Downtown Live</div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img
+              src="https://static.wixstatic.com/media/32b6f9_38e0124bbfc645bf896b3e4a744b8066~mv2.jpg/v1/fit/w_960,h_722,q_90,enc_avif,quality_auto/32b6f9_38e0124bbfc645bf896b3e4a744b8066~mv2.jpg"
+              alt="Community event" />
+            <div class="video-overlay">
+              <button class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
+              </button>
+              <span class="video-card-label">Community</span>
+              <div class="video-card-title">Charity Event Recap</div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img
+              src="https://static.wixstatic.com/media/32b6f9_66185113ee7748899ac19906ae15cd9d~mv2.jpg/v1/fill/w_113,h_76,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/32b6f9_66185113ee7748899ac19906ae15cd9d~mv2.jpg"
+              alt="Behind the scenes" />
+            <div class="video-overlay">
+              <button class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
+              </button>
+              <span class="video-card-label">Behind the Scenes</span>
+              <div class="video-card-title">Rehearsal Day</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section">
+      <div class="mission-inner">
+        <div class="mission-text">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">More Than a<br /><em>Dance Team.</em></h2>
+          <div class="divider"></div>
+          <p>
+            The NOLA Bombshells promote the development of well-rounded performers who believe in self-expression,
+            confidence, and community. Our dancers participate in outreach, traditional performances, and parade culture
+            rooted in New Orleans tradition.
+          </p>
+          <p>
+            Our symbol — a bold set of red lips — represents the smile we share with every crowd, every charity partner,
+            and every community we serve. We don't just perform. We give back.
+          </p>
+          <a href="#" class="btn-primary" style="margin-top: 8px">Meet the Team</a>
+        </div>
+        <div class="mission-stats">
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Charity Partners</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Active Members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100+</div>
+            <div class="stat-label">Events Performed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">NOLA</div>
+            <div class="stat-label">Born &amp; Raised</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <div class="events-inner">
+        <div class="events-header">
+          <div>
+            <span class="section-tag">Mark Your Calendar</span>
+            <h2 class="section-title">Upcoming <em>Events</em></h2>
+          </div>
+          <a href="#" class="btn-outline">View All Events</a>
+        </div>
+        <div class="events-list">
+          <div class="event-item">
+            <div class="event-date">
+              <div class="month">Oct</div>
+              <div class="day">25</div>
+            </div>
+            <div class="event-info">
+              <h3>Bombshell Brew — Vampire Ball</h3>
+              <p>Annual fundraiser benefiting the New Orleans Women &amp; Children's Shelter</p>
+            </div>
+            <span class="event-badge badge-red">Fundraiser</span>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <div class="month">Nov</div>
+              <div class="day">09</div>
+            </div>
+            <div class="event-info">
+              <h3>Girls on the Run 5K Celebration</h3>
+              <p>Community support &amp; performance at finish line celebration</p>
+            </div>
+            <span class="event-badge badge-outline">Community</span>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <div class="month">Dec</div>
+              <div class="day">14</div>
+            </div>
+            <div class="event-info">
+              <h3>VA Hospital Holiday Showcase</h3>
+              <p>Bringing holiday cheer to our veterans at the Southeast Louisiana VA</p>
+            </div>
+            <span class="event-badge badge-outline">Performance</span>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <div class="month">Jan</div>
+              <div class="day">6</div>
+            </div>
+            <div class="event-info">
+              <h3>Mardi Gras Parade Season 2027</h3>
+              <p>12 parade appearances throughout the Carnival season</p>
+            </div>
+            <span class="event-badge badge-red">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div style="max-width: 700px; margin: 0 auto">
+        <h2 class="section-title">Join the Movement.<br /><em>Auditions Now Open.</em></h2>
+        <p style="color: rgba(245, 243, 238, 0.8); font-size: 1rem; max-width: 500px; margin: 0 auto">
+          Think you have what it takes? We're looking for bold, committed performers 18 & up who are ready to perform,
+          give back, and represent New Orleans.
+        </p>
+        <div class="cta-btns">
+          <a href="#" class="btn-white">Apply to Audition</a>
+          <a href="#" class="btn-red-outline">Book the Bombshells</a>
+          <a href="#" class="btn-red-outline">Donate Now</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="brand-name"><img src="NOLA-Bombshells-LOGO.png" /></div>
+          <p>
+            New Orleans' premier performance team — bold on stage, powerful on the parade route, champions in the
+            community.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Meet the Team</a></li>
+            <li><a href="#">Bombshell Brew</a></li>
+            <li><a href="#">Become a Bombshell</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">NO Women &amp; Children's Shelter</a></li>
+            <li><a href="#">Girls on the Run</a></li>
+            <li><a href="#">VA Hospital</a></li>
+            <li><a href="#">Epilepsy Foundation</a></li>
+            <li><a href="#">SPCA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Book Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 NOLA Bombshells. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleDrawer() {
+        var drawer = document.getElementById("drawer");
+        var overlay = document.getElementById("drawerOverlay");
+        var hamburger = document.getElementById("hamburger");
+        var isOpen = drawer.classList.contains("open");
+        if (isOpen) {
+          closeDrawer();
+        } else {
+          drawer.classList.add("open");
+          overlay.classList.add("visible");
+          hamburger.classList.add("open");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeDrawer() {
+        var drawer = document.getElementById("drawer");
+        var overlay = document.getElementById("drawerOverlay");
+        var hamburger = document.getElementById("hamburger");
+        drawer.classList.remove("open");
+        overlay.classList.remove("visible");
+        hamburger.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeDrawer();
+      });
+    </script>
+  </body>
+</html>
