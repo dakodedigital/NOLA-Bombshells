@@ -84,9 +84,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    width: 44px;
-    height: 44px;
+    gap: 6px;
+    width: 35px;
+    height: 35px;
     background: none;
     border: none;
     cursor: pointer;
@@ -141,13 +141,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
-    height: 100px;
+    padding: 0.5em;
+    height: auto;
     border-bottom: 1px solid rgba(192, 24, 42, 0.2);
     flex-shrink: 0;
 }
 .drawer-logo {
-    max-width: 150px;
+    max-width: 100px;
     line-height: 0;
 }
 
@@ -156,7 +156,7 @@ nav {
     border: none;
     cursor: pointer;
     color: rgba(245, 243, 238, 0.5);
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
     padding: 8px;
     transition: color 0.2s;
@@ -300,7 +300,7 @@ nav {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: rgba(245, 243, 238, 0.65);
-    margin-bottom: 32px;
+    margin: 1em 0em;
     animation: fadeUp 0.6s 0.2s ease both;
 }
 .hero-mission {
@@ -748,7 +748,7 @@ footer {
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .nav-links {
         display: none;
     }
@@ -758,11 +758,28 @@ footer {
     nav {
         padding: 10px 24px;
     }
+    .nav-logo {
+        max-width: 100px;
+    }
     .hero {
         min-height: 75vh
     }
+    .hero-overlay {
+        background: rgba(0,0,0,0.5);
+    }
     .hero-content {
-        padding: 0 28px 64px;
+        padding: 1em;
+    }
+    .hero-title {
+        font-size: 2.5em;
+    }
+    .hero-subtitle {
+        font-size: 0.65em;
+        margin: 1em 0;
+    }
+    .hero-mission {
+        font-size: 0.8em;
+        margin-bottom: 1.5em;
     }
     .video-section,
     .mission-section,
